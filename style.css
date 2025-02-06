@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color: #1ac073;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    width: 70%;
+    height: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h1{
+    font-family: 'Squada One', sans-serif;
+    color: white;
+    font-weight: 100;
+}
+nav ul{
+    width: 46rem;
+    height: 1.5rem;
+    display: flex;
+    gap: 2.5rem;
+    padding: 0rem 5rem 0rem 9rem;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+}
+.landing-section{
+    height: 880px;
+    background-color: #1ac073;
+    position: relative;
+}
+.landing-section .hero{
+    height: 317px;
+    width: 534px;
+    position: absolute;
+    top: 250px;
+    left: 132px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.landing-section .hero h1{
+    font-size: 70px;
+    font-weight: 400;
+    color: white;
+    line-height: 82px;
+}
+.landing-section .hero p{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+.search-input{
+    width: 398px;
+    height: 58px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+}
+.search-input input[type="text"]{
+    position: absolute;
+    left: 10%;
+    height: 80%;
+    width: 45%;
+    border: none;
+    outline: none;
+}
+.search-input button{
+    right: 0;
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    color: white;
+    background-color: #f3ba00;
+    border: none;
+    outline: none;
+}
+.landing-section .cooking-plate{
+    height: 525px;
+    width:  522px;
+    position: absolute;
+    top: 240px;
+    left: 774px;
+    background-image: url("/images/cuate.svg");
+}
