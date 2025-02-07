@@ -5,7 +5,7 @@
 html,body{
     height: 100%;
     width: 100%;
-    background-color: white;
+    background-color: #f7f8fa;
     font-family: 'Roboto', sans-serif;
 }
 header{
@@ -101,4 +101,104 @@ nav ul li a{
     top: 240px;
     left: 774px;
     background-image: url("/images/cuate.svg");
+}
+.kitchen-section{
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.kitchen-section .kitchen-cards{
+    width: 85%;
+    height: auto;
+    margin-top: 105px;
+}
+.kitchen-section.kitchen-cards h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+.cards-home{
+    margin-top: 87px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+.card{
+    height: 337px;
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+.card .product-detail{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px 5px 10px;
+}
+.card .product-detail h1{
+    font-size: 16px;
+    font-weight: 400;
+}
+.card .product-rating{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+.card .product-rating img:first-child{
+    width: 121px;
+    height: 20px;
+}
+.card .product-rating img:nth-child(2){
+    width: 22px;
+    height: 20px;
+}
+.kitchen-section .kitchen-cards h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+.slider-container{
+    margin-top: 40px;
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.slider-container .slider-item{
+    height: 337px; 
+    width: 227px;
+    background-color: white;
+    border-radius: 10px;
+}
+.slider-container .slider-item img{
+    width: 100%;
+    height: 250px;
+}
+.slider-item .item-detail{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+.slider-item .item-detail h1{
+    font-size: 16px;
+    font-weight: 400;
+}
+.slider-item .item-rating{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+.slider-item .item-rating img:first-child{
+    width: 121px;
+    height: 20px;
+}
+.slider-item .item-rating img:nth-child(2){
+    width: 22px;
+    height: 20px;
+}
+.slider-item:nth-child(2){
+    box-shadow: -2px 0px 20px 3px rgba(0,0,0,0.5);
 }
