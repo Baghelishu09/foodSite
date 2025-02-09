@@ -100,7 +100,7 @@ nav ul li a{
     position: absolute;
     top: 240px;
     left: 774px;
-    background-image: url("/images/cuate.svg");
+    background-image: url("images/cuate.svg");
 }
 .kitchen-section{
     height: auto;
@@ -166,12 +166,15 @@ nav ul li a{
     padding: 0 150px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .slider-container .slider-item{
     height: 337px; 
     width: 227px;
     background-color: white;
     border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
 }
 .slider-container .slider-item img{
     width: 100%;
@@ -199,6 +202,57 @@ nav ul li a{
     width: 22px;
     height: 20px;
 }
-.slider-item:nth-child(2){
-    box-shadow: -2px 0px 20px 3px rgba(0,0,0,0.5);
+.slider-item.active{
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+.slider-item:hover{
+    transform: scale(1.2);
+}
+#leftarrow{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: transparent;
+    border: 2px solid #1ac073;
+}
+.leftarrow-btn{
+    color: #1ac073;
+    font-size: 37px;
+}
+.rightarrow-btn{
+    color: white;
+    font-size: 37px;
+}
+#rightarrow{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    top: 50%;
+    background-color: #1ac073;
+    border: none;
+    right: 0;
+}
+#rightarrow:hover,
+#leftarrow:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+#dish-request{
+    position: absolute;
+    margin-top: 150px;
+    width: 210px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #1ac073;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    left: 45%;
 }
